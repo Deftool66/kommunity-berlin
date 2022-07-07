@@ -1,0 +1,109 @@
+.dash-show{
+  width: 86%;
+  text-align: left;
+  margin: auto;
+  margin-top: 180px;
+  // background-color: #0F393A;
+  h2{
+    color: white;
+    font-size: 18px;
+
+  }
+}
+
+.institution-dash-show{
+  text-align: left;
+  margin: auto;
+  margin-top: 200px;
+  // background-color: #0F393A;
+  h2{
+    color: white;
+    font-size: 18px;
+  }
+}
+
+.form-header-dash{
+  align-content: center;
+  margin: auto;
+  background-image: url("https://images.unsplash.com/photo-1577746134980-9e25ad4639f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-position: center;
+  background-size: 500px;
+  border-bottom:3px inset #f18e3d;
+  text-shadow: 0 0 5px white;
+  height: 19%;
+  h2{
+    margin-top: 1vh;
+    text-align: center;
+    color: white;
+    font-size: 3vh;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+  }
+  position: fixed;
+  top: 0vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.dash-body{
+  // background-color: #0F393A;
+}
+
+// .request-cards-container{
+//   border:4px inset #f18e3d;
+//   background-color: #9FB0B0;
+// }
+
+.user-offer-card-content{
+  background-color: #9fb0b0;
+  padding: 20px;
+  max-width: 80%;
+  color: black;
+  border-radius: 20px;
+  border: 4px inset #f18e3d;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  h3 {
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 0 0 5px #f18e3d;
+  }
+}
+
+#user-dashboard-title {
+  text-shadow: 0 0 3px white;
+}
+
+.hidden.dashboard-user-hidden-div {
+  // transform: scale(0);
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s, max-height .5s ease-out;
+  background-color: #324F4F;
+  border: 1px inset #F18E3D;
+}
+
+.dashboard-user-hidden-div {
+  // transform: scale(1);
+  opacity: 1;
+  max-height: 1000px;
+  transition: opacity .5s, max-height .5s ease-in;
+  overflow: hidden;
+  background-color: #324F4F;
+  border: 3px inset #F18E3D;
+  padding: 10px;
+  border-radius: 10px;
+    p {
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+}
+
+.request-date-container {
+  border: 1px inset white;
+  border-radius: 10px;
+}

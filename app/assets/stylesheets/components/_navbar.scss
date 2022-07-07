@@ -1,0 +1,32 @@
+.navbar-div {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 900;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #9FB0B0;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #9FB0B0 0%, #0F393A 74%);
+  border-top: 3px solid #F18E3D;
+}
+
+.navbar-icon {
+  padding-top: 9px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none !important;
+  color: white;
+  :hover {
+    text-decoration: none !important;
+  }
+}
+
+.navbar-container {
+  background-color: #141e29;
+}

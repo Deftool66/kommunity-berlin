@@ -1,0 +1,23 @@
+<div class="background-request">
+  <div class="wrapper-class">
+  <div class="form-header">
+    <%= link_to image_tag('Kommunity_logo.png',id: "form-logo"),'/#'%>
+    <h1>Berlin says thank you!</h1>
+  </div>
+  <div class="form-text-thanks">
+      <p>Please keep an eye on your emails for a reply!
+      </p>
+  </div>
+    <div class="request-form">
+      <%= simple_form_for @request do |f| %>
+                <%= f.input :feedback, label: 'Help us improve:', placeholder: 'Give us some feedback', input_html: { class: "feedback-content" } %>
+              <div class="row mb-0">
+        <div class="col-sm-9 offset-sm-3 request-button">
+          <a href="/offers"><%= f.button :submit, "Submit", class: "button-form" %></a>
+          <a href="/offers"><%= f.button :button, "Go back", class: "button-form-back" %><a>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

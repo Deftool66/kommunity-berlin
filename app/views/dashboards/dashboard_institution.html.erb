@@ -1,0 +1,53 @@
+<div class="dashboard-institution-container">
+  <div class="form-header-dash">
+    <%= link_to image_tag('Kommunity_logo.png',id: "form-logo"),'/#'%>
+    <div class="card-trip-infos">
+      <div>
+        <h2 id="dashboard-title"><strong>Your Projects</strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="institution-dash-show">
+  <% @offers.order('created_at DESC').each do |offer| %>
+    <br>
+    <%#= link_to offer_path(offer) do %>
+      <div class="my-offer-card-container d-flex justify-content-center items-align-center">
+        <div class="my-offer-card-content">
+          <div class="dashboard-institution-title-container">
+            <h3><%= offer.title %></h3>
+          </div>
+          <br>
+          <p id="offer-address-dashboard"><%= offer.address %></p>
+          <hr>
+          <div class="institution-offer-description hidden">
+            <p class="text-left"><%= offer.description %></p>
+            <p id="publish-date">Publish date: <%= offer.created_at.to_s[0..-14] %></p>
+            <div class="number-of-requests-container text-center">
+            <span id="number-of-requests">Number of requests:</span> <span id="number-of-requests-number"><%= offer.requests.count %></span>
+
+            </div>
+
+          </div>
+          <div class="icon-content d-flex justify-content-end">
+            <a href="/offers/<%= offer.id %>" data-method="delete"><i id="delete-icon" class="far fa-trash-alt"></i></a>
+            <a href="/offers/<%= offer.id %>/edit"><i id="edit-icon" class="far fa-edit"></i></a>
+          </div>
+        </div>
+      </div>
+    <%# end %>
+  <% end %>
+  <%= render "shared/dashboard_nav" %>
+  </div>
+  <div class="bouncer-div">
+  </div>
+</div>
+
+
+<script>
+let content = document.querySelectorAll('.my-offer-card-container');
+content.forEach((element) => {
+  element.addEventListener('click', (event) => {
+    event.currentTarget.querySelector('.institution-offer-description').classList.toggle('hidden');
+  });
+})
+</script>

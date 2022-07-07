@@ -1,0 +1,23 @@
+  <div class="dashboard-offer">
+    <% @requests.order('created_at DESC').each do |request| %>
+    <div class="card-product dashboard-user-card">
+      <div class="user-offer-card-content">
+        <div class = "dashboard-offer">
+          <h3><%= request.offer.title %></h3>
+          <p><%= request.offer.address %></p>
+          <hr>
+          <div class="dashboard-user-hidden-div hidden">
+            <p><%= request.content %></p>
+            <br>
+            <div class="request-date-container">
+              <p>Application sent on - <strong><%= request.created_at.to_s[0..-14] %></strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+ <%# <div class = "form-text">
+          <p><%= request.offer.description %></p>
+          <%# </div> %>

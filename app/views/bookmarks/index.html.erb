@@ -1,0 +1,21 @@
+<div class="dash-body">
+  <div class="form-header-dash">
+  <%= link_to image_tag('Kommunity_logo.png',id: "form-logo"),'/#'%>
+    <%# <img src="https://i.ibb.co/64bYBNS/Logo-Updated-2.png" alt="KommUnity's logo" id="form-logo"> %>
+    <div class="card-trip-infos">
+      <div>
+        <h2>Your Bookmarks</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-text-dashboard">
+    <div class="dash-show">
+      <h2>Your Bookmarks History:</h2>
+      <%# <div class="request-cards-container"> %>
+      <%= render "bookmark_card" %>
+      <%# </div> %>
+    </div>
+  </div>
+  <%= render "shared/dashboard_nav" %>
+</div>

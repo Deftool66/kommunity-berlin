@@ -1,0 +1,116 @@
+
+.button{
+  background-color: white;
+  box-shadow: 0 5px 5px -5px rgb(0, 0, 0);
+  color: black;
+  width: 250px;
+  font-family: $headers-font;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  font-size: 2.5vh;
+  height: 10vh;
+  border-radius: 10px;
+  opacity: 0.95;
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    outline: none;
+    // position: absolute;
+    // top: 30px;
+    // right: 37px;
+    color: black;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.button-form{
+  background-color: white;
+  box-shadow: 0 5px 5px -5px rgb(0, 0, 0);
+  color: black;
+  width: 150px;
+  font-family: $headers-font;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0.95;
+  margin-top: 1.5vh;
+  position: relative;
+  a {
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    right: 37px;
+    color: black;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.button-form-back{
+  background-color: #E65661;
+  box-shadow: 0 5px 5px -5px rgb(0, 0, 0);
+  color: black;
+  width: 150px;
+  font-family: $headers-font;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0.95;
+  margin-top: 1.5vh;
+  position: relative;
+  a {
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    right: 37px;
+    color: black;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.button-show-back{
+  display: flex;
+  background-color: #E65661;
+  box-shadow: 0 5px 5px -5px rgb(0, 0, 0);
+  color: black;
+  width: 150px;
+  font-family: $headers-font;
+  text-align: center;
+  text-decoration: none;
+  border: 2px black;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0.95;
+  margin-top: 1.5vh !important;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+  a {
+    text-decoration: none;
+    position: absolute;
+    top: 30px;
+    right: 37px;
+    color: black;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}

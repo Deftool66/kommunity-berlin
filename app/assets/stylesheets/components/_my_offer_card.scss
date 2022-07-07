@@ -1,0 +1,106 @@
+.my-offer-card-content {
+  background-color: #9fb0b0;
+  padding: 20px;
+  max-width: 80%;
+  color: black;
+  border-radius: 20px;
+  border:4px inset #f18e3d;
+  position: relative;
+  h3 {
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 0 0 5px #F18E3D;
+    text-align: center;
+  }
+  a {
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  #offer-address-dashboard {
+    margin-top: -18px;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    // padding-right: 74px;
+  }
+}
+
+//BACK TO MAP BUTTON
+#dashboard-back-to-map {
+  left: 70px;
+  position: relative;
+}
+
+.dashboard-institution-container {
+  color: white;
+  text-align: center;
+}
+
+#delete-icon {
+  color: white;
+  padding-top: 30px;
+}
+
+#edit-icon {
+  color: white;
+  padding-top: 30px;
+  padding-left: 230px;
+}
+
+#number-of-requests {
+  color: white;
+}
+
+#number-of-requests-number {
+  color: white;
+  text-shadow: 0 0 5px #F18E3D;
+}
+
+.number-of-requests-container {
+  background-color: #324F4F;
+  border: 1px inset white;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+
+.hidden.institution-offer-description {
+  // transform: scale(0);
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 1s, max-height .5s ease-out;
+  background-color: #324F4F;
+  border: 1px inset #F18E3D;
+}
+
+.institution-offer-description {
+  // transform: scale(1);
+  opacity: 1;
+  max-height: 1000px;
+  transition: opacity .5s, max-height .5s ease-in;
+  overflow: hidden;
+  background-color: #324F4F;
+  border: 3px inset #F18E3D;
+  padding: 10px;
+  border-radius: 10px;
+  p {
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+#dashboard-title {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding-bottom: 3px;
+}
+
+#publish-date {
+  border: 1px inset white;
+  border-radius: 10px;
+}
+
+.bouncer-div {
+  height: 100px;
+}

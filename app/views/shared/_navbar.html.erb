@@ -1,0 +1,27 @@
+<div class="navbar-container">
+  <div class="navbar-div d-flex justify-content-around">
+  <% if current_user&.institution? %>
+      <a href="/dashboard_institution"><i class="fas fa-user navbar-icon"></i></a>
+    <% else %>
+      <a href="/dashboard"><i class="fas fa-user navbar-icon"></i></a>
+    <% end %>
+
+    <% if current_user&.institution? %>
+      <a href="/offers/new"><i class="fas fa-plus navbar-icon"></i></a>
+    <% else %>
+      <a href="/filters"><i class="fas fa-sliders-h navbar-icon"></i></a>
+    <% end %>
+
+    <% if current_user&.institution? %>
+      <a href="/users/sign_in"><i class="fas fa-edit navbar-icon"></i></a>
+    <% else %>
+      <a href="/bookmarks"><i class="fas fa-heart navbar-icon"></i></a>
+    <% end %>
+
+    <% if current_user&.institution? %>
+      <a href="/users/sign_out" data-method="delete" rel="nofollow"><i class="fas fa-power-off navbar-icon"></i></a>
+    <% else %>
+      <a href="/users/sign_out" data-method="delete" rel="nofollow"><i class="fas fa-power-off navbar-icon"></i></a>
+    <% end %>
+  </div>
+</div>

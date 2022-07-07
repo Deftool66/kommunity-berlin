@@ -1,0 +1,14 @@
+
+<%# JUST TO KEEP CODE - CAN BE DELETED LATER %>
+<h1>here are all the opportunities</h1>
+ <div>
+    <% @offers.each do |offer| %>
+      <div class="card-product">
+        <div class="card-product-infos">
+          <h2><%= link_to offer.title, offer_path(offer) %></h2>
+          <h2><%= offer.description %></h2>
+          <h2><%= offer.address %></h2>
+        </div>
+      </div>
+    <% end %>
+</div>

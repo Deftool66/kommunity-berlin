@@ -1,0 +1,33 @@
+<div class="animation">
+<div class="form-header-dash">
+    <%= link_to image_tag('Kommunity_logo.png',id: "form-logo"),'/#'%>
+    <div class="card-trip-infos">
+      <div>
+        <h2>Your Opportunity</h2>
+      </div>
+    </div>
+  </div>
+<hr class="styled-hr">
+<div class='show-offer'>
+  <div>
+    <h1><%= @offer.title %></h1>
+    <br>
+    <div class="show-offer-text">
+      <p>Title:
+      <br>
+      <strong><%= @offer.title %></strong></p>
+      <p>Description:
+      <br>
+      <strong><%= @offer.description %></strong></p>
+      <p>Address:
+      <br>
+      <strong><%= @offer.address %></strong></p>
+      <p>Email
+      <br>
+      <strong><%= @offer.email  %></strong></p>
+    </div>
+  </div>
+  <div class="button-container">
+    <a href="/offers"><button class="button-show-back text-center">Back</button></a>
+  </div>
+</div>

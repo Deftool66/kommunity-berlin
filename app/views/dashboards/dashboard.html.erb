@@ -1,0 +1,31 @@
+<div class="dash-body">
+  <div class="form-header-dash">
+    <%= link_to image_tag('Kommunity_logo.png',id: "form-logo"),'/#'%>
+    <div class="card-trip-infos">
+      <div>
+        <h2><strong>Your Dashboard</strong></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-text-dashboard">
+    <div class="dash-show">
+      <h2 id="user-dashboard-title" class="text-center mb-3"><strong>Your Applications:</strong></h2>
+      <%# <div class="request-cards-container"> %>
+      <%= render "dashboard_card" %>
+      <%# </div> %>
+    </div>
+  </div>
+  <div class="bouncer-div">
+  </div>
+  <%= render "shared/dashboard_nav" %>
+</div>
+
+<script>
+  let content = document.querySelectorAll('.dashboard-user-card');
+  content.forEach((element) => {
+    element.addEventListener('click', (event) => {
+      event.currentTarget.querySelector('.dashboard-user-hidden-div').classList.toggle('hidden');
+    });
+  })
+</script>

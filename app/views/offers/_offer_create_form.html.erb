@@ -1,0 +1,18 @@
+<div class="animation">
+<div class="offer-form">
+<%= simple_form_for([@offer], html: { class: "wrapper-class"}) do |f| %>
+          <%= f.input :title, placeholder: 'title', input_html: { class: "feedback-input" } %>
+          <%= f.input :description, placeholder: 'Description', input_html: { class: "feedback-input" } %>
+          <%= f.association :categories, as: :check_boxes, input_html: { multiple: true }, include_hidden: :false, input_html: { class:"tag-selector-offer" }, :item_wrapper_class => 'category-wrapper' %>
+          <%= f.association :district, input_html: { class: "feedback-input-district" } %>
+          <%= f.input :address,
+              input_html: { data: { geocoder_target: "address" }, class: "d-none feedback-input" },
+              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
+          <%= f.input :email, input_html: { class: "feedback-input", value: current_user.email } %>
+          <div class="button-wrap ">
+            <%= f.submit class: "button-form" %>
+            <%= link_to 'Cancel', :back, class:'btn button-form-back' %>
+          </div>
+        <% end %>
+</div>
+</div>

@@ -1,0 +1,14 @@
+
+<%= simple_form_for([@offer, @request], html: { class: "wrapper-class"})  do |f| %>
+  <%= f.input :first_name, input_html: { class: "feedback-input" }%>
+  <%= f.input :last_name, input_html: { class: "feedback-input" }%>
+  <%= f.input :email, input_html: { autocomplete: 'email', class: "feedback-input", value: current_user.email }  %>
+  <%= f.input :content, label:'Message', input_html: { class: "feedback-input" }, placeholder: 'Tell us something about yourself'%>
+  <div class="row mb-0">
+      <div class="col-sm-9 offset-sm-3">
+        <%= f.button :submit, class: "button-form", value: 'Send' %>
+        <%= link_to 'Cancel', :back, class:'btn button-form-back' %>
+        <%# <a href="/offers"><%= f.button :button, "Cancel", type: "reset", class: "button-form-back"%>
+      </div>
+    </div>
+<% end %>

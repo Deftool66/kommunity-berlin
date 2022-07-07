@@ -1,0 +1,127 @@
+.container-info-window {
+  // border-radius: 10px;
+}
+
+// .image-container-info {
+  //   background-image: url(https://source.unsplash.com/collection/4471273/900x900);
+  //   background-size: cover;
+  //   height: 150px;
+  //   width: 100%;
+  // }
+
+  .mapboxgl-popup {
+    max-width: 200px;
+  }
+
+
+
+@keyframes append-animate {
+  from {
+  transform: scale(0);
+  opacity: 0;
+  }
+  to {
+  transform: scale(1);
+  opacity: 1;
+  }
+ }
+
+      // CONTAINER INFO CARD
+.mapboxgl-popup {
+  transform: unset !important;
+  max-width: unset !important;
+  max-height: unset !important;
+  z-index: 90 !important;
+  height: 0 !important;
+  width: 100vw !important;
+  border-radius: unset !important;
+  background-color: #0f393a !important;
+  background-color: #9FB0B0 !important;
+  max-height: 675px !important;
+  animation: append-animate .35s ;
+  animation-timing-function: cubic-bezier(0.8, 0.81, 0.32, 1.28);
+}
+// animation-name: fadeIn;
+
+.image-container-info {
+  padding-top: 40px;
+}
+
+// CONTENT INFO CARD
+.mapboxgl-popup-content {
+  width: 100vw !important;
+  height: 85vh !important;
+  padding: 10px 30px !important;
+  border-radius: unset !important;
+  background-color: #0f393a !important;
+  color: white !important;
+  background-image: linear-gradient(315deg, #071d1d 0%, #0F393A 74%) !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-bottom: 3px solid #F18E3D;
+  transition: all 2s;
+  p {
+    font-size: 13px !important;
+    line-height: 25px !important;
+    padding: 0px 10px !important;
+  }
+  h4 {
+    font-weight: bolder;
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #F18E3D !important;
+  }
+}
+
+
+// CARD CLOSING "X"
+.mapboxgl-popup-close-button {
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: unset !important;
+  color: white;
+}
+
+// REMOVE TIP OF INFOWINDOW
+.mapboxgl-popup-tip {
+  display: none !important;
+}
+
+.card-info-content-div {
+  background-color: #9fb0b0;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  font-family: $headers-font;
+  img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    left: -18px;
+    border: 1px solid white;
+    object-fit: cover;
+  }
+  h4 {
+    padding: 10px 10px;
+  }
+
+}
+
+.card-info-content-without-image {
+  padding-top: 140px;
+  height: 440px !important;
+  overflow: scroll !important;
+}
+
+.bookmark-icon {
+  position: absolute;
+  right: 27px;
+  font-size: 45px;
+  top: 27px;
+  text-shadow: -1px 0 #F18E3D, 0 1px #F18E3D, 1px 0 #F18E3D, 0 -1px #F18E3D;
+  transition: .3s;
+}
+
+.bookmark-icon-click {
+  color: #F18E3D !important;
+}

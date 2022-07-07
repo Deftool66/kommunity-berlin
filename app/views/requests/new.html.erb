@@ -1,0 +1,14 @@
+<div class='animation'>
+<div class="form-header">
+  <%= link_to image_tag('Kommunity_logo.png',id: "form-logo"),'/#'%>
+  <h1>You're interested in:</h1>
+  <h2><%= @offer.title %> </h2>
+  <%# <h3>Address: <%= @offer.address %><h3>
+  <div class="form-text">
+    <p>If you'd like to apply to this opportunity, then please fill out this form below, and you're application will be sent to <%= @offer.email %>. Please keep an eye out for their response.</p>
+  </div>
+</div>
+  <div id="contact">
+    <%= render 'contact_form' %>
+  </div>
+</div>

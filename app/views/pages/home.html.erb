@@ -1,0 +1,65 @@
+<div class="landing-background">
+  <div class="landing-head">
+    <div class="landing-logo">
+    <%= link_to image_tag('Kommunity_logo.png'),'#'%>
+      <%# <img src="asset_path('Kommunity_logo.png')" alt="KommUnity's logo"> %>
+    </div>
+    <div class="landing-title">
+      <h1>KommUnity</h1>
+    </div>
+    <div class="landing-sub-title">
+      <h3>Your Route To Social Commitment</h3>
+    </div>
+  </div>
+  <div class="landing-call">
+    <%# <div class="img-circle-one">
+      <img src="https://source.unsplash.com/collection/9SgB4LphAhY" alt="charitable photo">
+    </div>
+    <div class="img-circle-two">
+      <img src="https://source.unsplash.com/collection/9SgB4LphAhY" alt="charitable photo two">
+    </div> %>
+    <div class="buttons-container d-flex justify-content-center">
+      <div class="buttons-container-small">
+        <% if !user_signed_in? %>
+          <a href="/users/sign_in"><button class="button">Log in</button></a>
+          <a href="/filters"><button class="button">Continue as guest</button></a>
+        <% else %>
+          <a href="/offers"><button class="button">Welcome back</button></a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%# <div class="landing-background">
+  <br>
+  <div class="landing-banner">
+    <div class="landing-banner-text">
+      <h1>KommUnity</h1>
+      <h5>Your Route to Social Enagement</h5>
+    </div>
+    <div class="logo-container">
+      <img src="https://i.ibb.co/kycnX8w/Komm-Unity-Transparent-2.png" class="logo-img">
+    </div>
+  </div>
+  <div class="call-to-action-container">
+    <div class="call-to-action">
+      <p><strong>Find the perfect opportunity for you, In less than <em>5</em> clicks</strong></p>
+    </div>
+  </div>
+  <div class="buttons-container">
+    <div class="button-box">
+    <button class="button"><span>Log in or Register</span></button>
+    </div>
+    <div class="button-box">
+    <button class="button"><span>Continue as Guest</span></button>
+    </div>
+  </div>
+  <div class="footer">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-github"></i>
+    <i class="fab fa-whatsapp"></i>
+    <i class="fab fa-twitter"></i>
+  </div>
+</div> %>

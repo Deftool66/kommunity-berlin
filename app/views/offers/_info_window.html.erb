@@ -1,0 +1,32 @@
+
+  <div class="container-info-window">
+    <div class="image-container-info rounded-circle">
+    </div>
+      <% if current_user&.user? || !user_signed_in? %>
+      <div class="card-info-content-div" data-controller="info-window">
+        <%= image_tag offer.categories.first.image, class: 'rounded-circle' %>
+        <i class="fas fa-heart bookmark-icon" data-info-window-target="bookmark" data-action="click->info-window#changeColor" id="bookmark-icon-id"></i>
+        <%# <img class="rounded-circle" src="<%= offer.categories.first.image %>
+        <div class="card-info-content-without-image">
+          <h4><%= offer.title %></h4>
+          <p><%= offer.address %></p>
+          <br>
+          <p><%= offer.description %></p>
+        </div>
+      </div>
+      <div class="button-container d-flex items-align-center justify-content-center">
+        <div class="button text-center"><a href="/offers/<%= offer.id %>/requests/new">Get in Touch</a></div>
+        <% else %>
+        <div class="institution-info-card-content text-center">
+          <h4><%= offer.title %></h4>
+          <p><%= offer.address %></p>
+        </div>
+        <div class="institution-card-buttons-container d-flex justify-content-center mt-5">
+          <div class="institution-info-card-buttons">
+            <div class="button text-center"><a href="/offers/<%= offer.id %>/edit">Edit Opportunity</a></div>
+            <div class="button text-center"><a href="/offers/<%= offer.id %>" data-method="delete">Delete Opportunity</a></div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+  </div>

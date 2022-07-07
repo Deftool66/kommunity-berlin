@@ -1,0 +1,101 @@
+<div class="animation">
+<%= form_with url: offers_path, method: :get, local: true do |f| %>
+  <div class="d-flex" id='offer-form' data-controller='offer-form'>
+    <div class="form filter-container" data-offer-form-target='form'>
+      <h3>Choose your district:</h3>
+      <hr>
+      <div class="checkbox-container">
+      <div class='skip'>
+      <a href="/offers">Skip</a>
+      </div>
+      <%= f.check_box "Mitte", class:"tag-selector" %>
+      <%= f.label "Mitte" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Friedrichshain-Kreuzberg", class:"tag-selector"  %>
+      <%= f.label "Friedrichshain-Kreuzberg" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Pankow", class:"tag-selector"  %>
+      <%= f.label "Pankow" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Charlottenburg-Wilmersdorf", class:"tag-selector"  %>
+      <%= f.label "Charlottenburg-Wilmersdorf" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Spandau", class:"tag-selector"  %>
+      <%= f.label "Spandau" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Steglitz-Zehlendorf", class:"tag-selector"  %>
+      <%= f.label "Steglitz-Zehlendorf" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Tempelhof-Schöneberg", class:"tag-selector"  %>
+      <%= f.label "Tempelhof-Schöneberg" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Neukölln", class:"tag-selector"  %>
+      <%= f.label "Neukölln" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Treptow-Köpenick", class:"tag-selector"  %>
+      <%= f.label "Treptow-Köpenick" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Marzahn-Hellersdorf", class:"tag-selector"  %>
+      <%= f.label "Marzahn-Hellersdorf" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Lichtenberg", class:"tag-selector" %>
+      <%= f.label "Lichtenberg" %>
+      </div>
+      <div class="checkbox-container">
+      <%= f.check_box "Reinickendorf", class:"tag-selector" %>
+      <%= f.label "Reinickendorf" %>
+      </div>
+      <div class="button-div-filter-form d-flex justify-content-center">
+      <div class='button' data-action='click->offer-form#toggleForms'>Next</div>
+      </div>
+    </div>
+    <div class='d-none form filter-container second-form' data-offer-form-target='form map'>
+      <h3>Select Your Target Group:</h3>
+      <hr>
+      <div class="checkbox-container">
+        <%= f.check_box "Children & Adolescents", class: "tag-selector"  %>
+        <%= f.label "Children & Adolescents" %>
+      </div>
+      <div class="checkbox-container">
+        <%= f.check_box "Seniors", class: "tag-selector"  %>
+        <%= f.label "Seniors" %>
+      </div>
+      <div class="checkbox-container">
+        <%= f.check_box "People with special needs", class: "tag-selector"  %>
+        <%= f.label "People with special needs" %>
+      </div>
+      <div class="checkbox-container">
+        <%= f.check_box "LGBTQ", class: "tag-selector"  %>
+        <%= f.label "LGBTQ" %>
+      </div>
+      <div class="checkbox-container">
+        <%= f.check_box "Refugee background", class: "tag-selector"  %>
+        <%= f.label "Refugee background" %>
+      </div>
+      <div class="checkbox-container">
+        <%= f.check_box "Nature", class: "tag-selector"  %>
+        <%= f.label "Nature" %>
+      </div>
+      <div class="checkbox-container">
+        <%= f.check_box "Everyone is welcome", class: "tag-selector"  %>
+        <%= f.label "Everyone is welcome" %>
+      </div>
+      <div class="button-div-filter-form d-flex justify-content-center">
+      <%= f.submit 'Filter', class:'button', data: { offer_form_target: 'button', offer_form_action: 'click->offer-form#submit' }%>
+      <%# <button class='button' type="submit">Filter</button> %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+</div>

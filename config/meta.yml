@@ -1,0 +1,5 @@
+meta_product_name: "Kommunity"
+meta_title: "Kommunity - a route to social commitment"
+meta_description: "a route to social commitment"
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
