@@ -14,8 +14,8 @@ Category.destroy_all
 
 puts "create 1 and 2 user"
 
-user_1 = User.create!(email: "leon@leon.de", password: "leon@leon.de", role: "user")
-user_2 = User.create!(email: 'alastair@alastair.de', password: 'alastair@alastair.de', role: 'institution')
+user_1 = User.create!(email: "user@user.de", password: "user@user.de", role: "user")
+user_2 = User.create!(email: 'admin@admin.de', password: 'admin@admin.de', role: 'institution')
 
 puts "creating districts..."
 
